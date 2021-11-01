@@ -5,13 +5,14 @@
 #year = str((2021 - Age)+100)
 #print(Name + "You will be 100 years old in the year " + year)
 
-from datetime import date
 #imports date class from datetime module.
-name = input("what is your name?: ")
+import datetime
 #Triggers an input response for user to enter their name.
-age = input("Enter your age: ")
+name = input("what is your name?: ")
 #Triggers an input response for user to enter their age.
-now = datetime.datetime.now()
+age = input("Enter your age: ")
 #datetime.datetime.now() returns a date object assigned to the now variable.
+now = datetime.datetime.now()
+
 diff= 100 - int(age)
 print('Hi' + name + "You will be 100 years old in",(now.year + diff))
